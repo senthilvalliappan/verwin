@@ -1,0 +1,50 @@
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<br>
+<br>
+<br>
+
+<div class="container">
+  <div class="pull-right">
+    <!--<button type="submit" (click)='logOut()' class="btn btn-primary">LogOut</button>-->
+  </div>
+  <div class="row">
+    <div class="panel panel-primary filterable">
+      <div class="panel-heading">
+        <h3 class="panel-title">USERS</h3>
+       
+      </div>
+      <div class="col-md-12">
+        
+      </div>
+      <table class="table" *ngIf="clients">
+        <thead>
+          <tr >
+            <th> FirstName </th>
+            <th> LastName </th>
+            <th>Designation</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <!--<th>
+              <a  routerLink="/edit" class="btn btn-info btn-xs"><b>+</b></a>
+            </th>-->
+            
+
+          </tr>
+        </thead>
+        <tbody *ngFor='let mymsg of clients;let i:index'>
+          <td>{{mymsg.firstname}}</td>
+          <td> {{mymsg.lastname}}</td>
+          <td>{{mymsg.designation}} </td>
+          <td>{{mymsg.email}} </td>
+          <td>{{mymsg.mobile}} </td>
+          <!--<button routerLink="/edit">Edit</button>-->
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

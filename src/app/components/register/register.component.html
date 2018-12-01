@@ -1,0 +1,56 @@
+
+<!------ Include the above in your HEAD tag ---------->
+
+<body>
+   <div class="container">
+      <div class="col-md-12 mx-auto text-center">
+         <div class="header-title">
+            <h4 class="wv-heading--title">
+               Welcome To Verwin Technologies Registration.
+            </h4>
+            
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-4"></div>
+         <div class="col-md-4 mx-auto">
+            <div class="myform form well">
+               <form #registerform="ngForm" (ngSubmit)="handleFormSubmit(registerform)">
+                  <div class="form-group">
+                   <!--  <input type="number" min="0" name="phone" id="phone"  class="form-control my-input" placeholder="Phone">-->
+                <input type="text" class="form-control my-input" name="firstname" id="firstname" ngModel placeholder="FirstName"/>
+                  </div>
+                  <div class="form-group">
+                   <!--  <input type="number" min="0" name="phone" id="phone"  class="form-control my-input" placeholder="Phone">-->
+                <input type="text" class="form-control my-input" name="lastname" id="lastname" ngModel placeholder="LastName"/>
+                  </div>
+                  <div class="form-group">
+                   <!--  <input type="number" min="0" name="phone" id="phone"  class="form-control my-input" placeholder="Phone">-->
+                <input type="text" class="form-control my-input" name="designation" id="designation" ngModel placeholder="Designation"/>
+                  </div>
+                  <div class="form-group">
+
+                     <input type="email"  class="form-control my-input" name="email" id="email" ngModel placeholder="Enter Email">
+                  </div>
+                  <div class="form-group">
+
+                     <input type="number"  class="form-control my-input" name="mobile" id="mobile" ngModel placeholder="Enter Mobile number">
+                  </div>
+                  <div class="form-group">
+                   <!--  <input type="number" min="0" name="phone" id="phone"  class="form-control my-input" placeholder="Phone">-->
+					 <input type="password" class="form-control my-input" name="password" id="password" ngModel placeholder="Password"/>
+                  </div>
+
+                  <div class="text-center ">
+                     <!--<button type="submit" class=" btn btn-block send-button tx-tfm">Create Your Free Account</button>-->
+					 <input class="btn btn-block send-button tx-tfm" value="Register" type="submit"/>
+
+                  </div>
+                  
+               </form>
+            </div>
+         </div>
+         <div class="col-md-4"></div>
+      </div>
+   </div>
+</body>
